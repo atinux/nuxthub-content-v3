@@ -37,5 +37,4 @@ jobs:
         uses: nuxt-hub/action@v1
         id: deploy
         with:
-          project-key: nuxthub-content-vhqd
-          hub-url: https://dev.nuxthub.pages.dev
+          project-key: content-with-hu-n541
