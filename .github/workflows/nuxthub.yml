@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Ensure NuxtHub module is installed
+        run: pnpx nuxthub@latest ensure
+
       - name: Build application
         run: pnpm build
 
@@ -34,4 +37,5 @@ jobs:
         uses: nuxt-hub/action@v1
         id: deploy
         with:
-          project-key: content-with-hu-n541
+          project-key: nuxthub-content-vhqd
+          hub-url: https://dev.nuxthub.pages.dev
